@@ -1,0 +1,18 @@
+{
+  "id": "5638ffdb",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Always use Tavily MCP (tavily_search, extract, crawl, map, research) for any web search, docs lookup, deep resear",
+  "origin": "assistant_tool",
+  "created_at": 1792848840.8880146,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Always use Tavily MCP (tavily_search, extract, crawl, map, research) for any web search, docs lookup, deep research, fact-check, crawl, extraction, or unknown info; fall back to built-in web_search only if Tavily fails."
+      }
+    ]
+  }
+}

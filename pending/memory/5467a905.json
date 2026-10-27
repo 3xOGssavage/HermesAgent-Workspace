@@ -1,0 +1,18 @@
+{
+  "id": "5467a905",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Post-debloat Hermes state Oct 2026: 45 registered skills, 37 optional-mcps left, active MCPs are time + filesyste",
+  "origin": "background_review",
+  "created_at": 1792795176.30128,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Post-debloat Hermes state Oct 2026: 45 registered skills, 37 optional-mcps left, active MCPs are time + filesystem (locked to Hermes home) + github. Notion and 28 other catalog plugs deleted from disk. Portal connectors all disconnected."
+      }
+    ]
+  }
+}

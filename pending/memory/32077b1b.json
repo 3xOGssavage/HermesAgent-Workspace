@@ -1,0 +1,14 @@
+{
+  "id": "32077b1b",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to memory: Graft MCP runs via F:/CD/Hermes Agent/scripts/graft-mcp.cmd (pinned @nanonets/graft@0.15.0; global npm copy exists) serv",
+  "origin": "background_review",
+  "created_at": 1792967204.079502,
+  "payload": {
+    "action": "add",
+    "target": "memory",
+    "content": "Graft MCP runs via F:/CD/Hermes Agent/scripts/graft-mcp.cmd (pinned @nanonets/graft@0.15.0; global npm copy exists) serving the F:/CD/Opencode/graft index (6 tools). Sentry MCP is configured at https://mcp.sentry.dev/mcp but unauthenticated until owner runs `hermes mcp login sentry` in a browser session.",
+    "old_text": null
+  }
+}

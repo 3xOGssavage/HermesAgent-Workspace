@@ -1,0 +1,18 @@
+{
+  "id": "39294d6b",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Supabase MCP doors are broad (no project_ref, all 6 feature groups, both read-only and admin). Every Supabase cal",
+  "origin": "background_review",
+  "created_at": 1793042145.158745,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Supabase MCP doors are broad (no project_ref, all 6 feature groups, both read-only and admin). Every Supabase call must pass an explicit project_id: main project iovbjaljwxwxchumnyoc goes direct, unknown scope gets list_projects first then confirm, never assume. Same rule was agreed for Neocoder."
+      }
+    ]
+  }
+}

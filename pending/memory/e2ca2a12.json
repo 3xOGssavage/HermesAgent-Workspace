@@ -1,0 +1,18 @@
+{
+  "id": "e2ca2a12",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: TrailCode MCPs pinned to @nanonets/graft@0.15.0 because 0.25.x serves deferred tools this client reads as 0 tools",
+  "origin": "background_review",
+  "created_at": 1793020082.8344831,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode MCPs pinned to @nanonets/graft@0.15.0 because 0.25.x serves deferred tools this client reads as 0 tools. Wrappers: F:/CD/Hermes Agent/scripts/trailcode-mcp.cmd (own map, 8 scoped dirs) and trailcode-neocoder-mcp.cmd (points at F:/CD/Opencode/Projects/neodev-portal). Graft server resolves repo from working folder, so the wrapper cd is load-bearing. A tools/list count of 6 proves nothing; always verify with a live graft_find_code query."
+      }
+    ]
+  }
+}

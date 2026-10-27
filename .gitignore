@@ -1,0 +1,37 @@
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+.trail/
+# Secrets — never committed
+.env
+.env.*
+auth.json
+mcp-tokens/
+pairing/
+*.pem
+*.key
+# Runtime junk — regenerable
+cache/
+logs/
+sessions/
+state.db*
+checkpoints/
+backups/
+audio_cache/
+image_cache/
+installs/
+tools/
+bin/
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+# Live state + upstream source (not mine to back up)
+state/
+telemetry/
+hermes-agent/
+.curator_backups/
+.checkpoints.lock
+shared/nous_auth.json
+*.lock
+.hermes_history
+pastes/

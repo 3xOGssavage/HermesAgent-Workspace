@@ -1,0 +1,14 @@
+{
+  "id": "b0a167bf",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham keeps separate keys, tokens, and credentials per agent: Hermes gets its own fresh credentials, never shares Neocod",
+  "origin": "background_review",
+  "created_at": 1792957714.4841619,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham keeps separate keys, tokens, and credentials per agent: Hermes gets its own fresh credentials, never shares Neocoder's (GitHub, Supabase, Cloudflare, Vercel all separate; each agent's OAuth stays its own).",
+    "old_text": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "9f750b93",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to memory: - add: Hermes mcp add prompts read from the real TTY, so piped answers never reach URL-server auth questions; configure",
+  "origin": "background_review",
+  "created_at": 1792961401.3531175,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes mcp add prompts read from the real TTY, so piped answers never reach URL-server auth questions; configure those servers with hermes config set instead, then verify with hermes mcp test. Repeated --env flags keep only the last value, so multi-key servers need one config set per key."
+      },
+      {
+        "action": "add",
+        "content": "Hermes reuses Neocoder files instead of duplicating them: Tavily rotator launcher plus shared state at F:/CD/Opencode/.opencode, ddddocr server plus its browser_use venv python, Neocoder MCP config at F:/CD/Opencode/opencode.json with user-level cloudflare entry under C:/Users/user/.config/opencode/opencode.jsonc."
+      }
+    ]
+  }
+}

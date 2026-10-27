@@ -1,0 +1,26 @@
+{
+  "id": "d6ce925f",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to user profile: - add: Soham demands ASCII box tables (+--+ borders, = under header) for structured output, width-checked by script befo",
+  "origin": "background_review",
+  "created_at": 1793088292.9498632,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham demands ASCII box tables (+--+ borders, = under header) for structured output, width-checked by script before sending; plain lists get rejected."
+      },
+      {
+        "action": "add",
+        "content": "Prompts Soham pastes to Neocoder must state end-goals only, never how-to instructions; he corrects instruction-style prompts."
+      },
+      {
+        "action": "add",
+        "content": "Standing rules: every agent holds its own keys/tokens (never copy secrets between agents); 90-day expirations on all tokens; plan-first-then-execute with explicit go-ahead; never claim unverified — prove with live tests."
+      }
+    ]
+  }
+}

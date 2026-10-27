@@ -1,0 +1,18 @@
+{
+  "id": "262cc755",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Soham's Supabase project ref is iovbjaljwxwxchumnyoc (Neocoder uses two doors on it: read-only and full admin); H",
+  "origin": "background_review",
+  "created_at": 1792934078.6583734,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham's Supabase project ref is iovbjaljwxwxchumnyoc (Neocoder uses two doors on it: read-only and full admin); Hermes mirrors the same project with its own fresh token."
+      }
+    ]
+  }
+}

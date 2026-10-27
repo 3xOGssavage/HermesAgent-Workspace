@@ -1,0 +1,18 @@
+{
+  "id": "2e5ac29d",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Hermes mcp add keeps only the LAST repeated flag (e.g. multiple --env become one). To set several env vars, add t",
+  "origin": "background_review",
+  "created_at": 1792921276.6154492,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes mcp add keeps only the LAST repeated flag (e.g. multiple --env become one). To set several env vars, add the server first then use hermes config set mcp_servers.<name>.env.KEY value once per key, then mcp test to verify."
+      }
+    ]
+  }
+}

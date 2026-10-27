@@ -1,0 +1,18 @@
+{
+  "id": "c8b5238d",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Soham uses opencode and Hermes Agent only for coding, not Claude Code or Codex. Does not use Notion, Airtable, Hi",
+  "origin": "background_review",
+  "created_at": 1792839273.328266,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham uses opencode and Hermes Agent only for coding, not Claude Code or Codex. Does not use Notion, Airtable, Himalaya, GIF search, Google Workspace, Box. Prefers short simple plain-terminal answers with small ASCII tables."
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "7075a853",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Hermes MCP server for repo code-map is named trailcode (config mcp_servers.trailcode, script scripts/trailcode-mc",
+  "origin": "background_review",
+  "created_at": 1792969653.0208504,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes MCP server for repo code-map is named trailcode (config mcp_servers.trailcode, script scripts/trailcode-mcp.cmd), never graft; user gets confused otherwise. It runs global @nanonets/graft@0.15.0 from F:/CD/Opencode (which holds the graft/ index). Do NOT upgrade: 0.25.x serves deferred tools this client reads as 0 tools. Wrapper needed because the server resolves its repo from cwd and Hermes home has no index."
+      }
+    ]
+  }
+}

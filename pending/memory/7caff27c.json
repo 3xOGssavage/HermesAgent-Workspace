@@ -1,0 +1,26 @@
+{
+  "id": "7caff27c",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to user profile: - add: Soham is a partial/vibe coder: explain everything in simple words, plain terminal text, no markdown. When he asks",
+  "origin": "background_review",
+  "created_at": 1793052478.120873,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham is a partial/vibe coder: explain everything in simple words, plain terminal text, no markdown. When he asks for structured/table output, use ASCII +-|= box tables only, width-checked by script before sending; broken tables are a repeated complaint."
+      },
+      {
+        "action": "add",
+        "content": "Standing rules from Soham: every setup must be finished fully with a live test (never half-done); verify claims with real tool output, not assumptions; every agent gets its own keys/tokens (never copy secrets between Hermes and Neocoder); always search the web when unsure."
+      },
+      {
+        "action": "add",
+        "content": "Naming: TrailCode (trailhq/Trail-Code, formerly Graft) server here is called trailcode (own map) and trailcode-neocoder (Neocoder project maps); never call it graft to avoid confusion."
+      }
+    ]
+  }
+}

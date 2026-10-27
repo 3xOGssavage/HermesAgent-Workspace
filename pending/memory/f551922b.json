@@ -1,0 +1,30 @@
+{
+  "id": "f551922b",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 4 op(s) to memory: - add: TrailCode/Graft MCP: only @nanonets/graft@0.15.0 lists tools eagerly to this client; 0.25.x and @trailhq/trail-co",
+  "origin": "background_review",
+  "created_at": 1793117855.1813745,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode/Graft MCP: only @nanonets/graft@0.15.0 lists tools eagerly to this client; 0.25.x and @trailhq/trail-code serve deferred tools that read as 0 tools. Always pin 0.15.0 in wrapper scripts."
+      },
+      {
+        "action": "add",
+        "content": "Graft MCP resolves its repo from process cwd, not args: Hermes MCP children must be launched via a .cmd wrapper that cds into the indexed repo first; quote paths (Hermes Agent has a space). One server maps one repo root."
+      },
+      {
+        "action": "add",
+        "content": "n8n MCP on this setup: `hermes mcp login` never completes (fails before showing grant URL). Working path is manual PKCE: DCR at /mcp-oauth/register, listener on pinned oauth.redirect_port, user opens authorize URL, exchange code, store mcp-tokens/n8n.json + n8n.meta.json. Valid n8n scopes are workflow:/execution:/agent:/credential:/dataTable:/project:/tag:/communityPackage:/aiPreference: prefixed, never openid."
+      },
+      {
+        "action": "add",
+        "content": "Neocoder MCP headers using {env:VAR} fail with 401 when VAR exists in registry but not in the live server process env (setx needs a full process-tree restart, not a UI reopen). Diagnose via registry-vs-process two-layer check."
+      }
+    ]
+  }
+}

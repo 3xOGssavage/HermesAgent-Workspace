@@ -1,0 +1,14 @@
+{
+  "id": "7d90f4a9",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Owner reads in plain Windows terminal (no markdown render): always ASCII box tables (+--+ borders, width-checked), full-",
+  "origin": "background_review",
+  "created_at": 1793126816.3003528,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Owner reads in plain Windows terminal (no markdown render): always ASCII box tables (+--+ borders, width-checked), full-width, simple words — he is a partial/vibe coder, not a coder. End-goals only, never how-to, when drafting prompts for Neocoder. Nothing is done until proven by a live test; plan-then-review beats acting. Standing rules: separate keys/tokens per agent, 90-day token expirations, tables width-verified before sending.",
+    "old_text": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "81a6f225",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 4 op(s) to memory: - add: Hermes MCP client cannot consume TrailCode/Graft 0.25.x deferred tools (tools/list returns empty). Pin @nanonets/",
+  "origin": "background_review",
+  "created_at": 1793009708.9343152,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes MCP client cannot consume TrailCode/Graft 0.25.x deferred tools (tools/list returns empty). Pin @nanonets/graft@0.15.0 via the global install (C:\\Users\\user\\AppData\\Roaming\\npm\\graft.cmd); wrapper .cmd must cd into the indexed repo first (quote paths containing spaces). One server instance covers exactly one repo root."
+      },
+      {
+        "action": "add",
+        "content": "Neocoder code maps live per project under F:\\CD\\Opencode\\Projects\\ (neodev-portal is the main prebuilt one); the Opencode root has no graph, so a TrailCode server pointed at root answers empty. Hermes own map covers skills/memories/scripts/plugins/cron/hooks/platforms/shared."
+      },
+      {
+        "action": "add",
+        "content": "Sentry MCP needs mcp_servers.sentry.auth=oauth set in config.yaml before hermes mcp login works; a URL-only entry fails login with auth=None. Fix via config set, not remove+add."
+      },
+      {
+        "action": "add",
+        "content": "hermes mcp test showing Connected with 0 tools can mean a version/behavior mismatch or a missing graph, not a dead server. Always verify MCP code-map servers with a live tools/call query returning real file hits, never tools/list count alone."
+      }
+    ]
+  }
+}

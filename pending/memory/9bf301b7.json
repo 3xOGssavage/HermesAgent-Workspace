@@ -1,0 +1,26 @@
+{
+  "id": "9bf301b7",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to memory: - add: TrailCode/Graft in Hermes is pinned to @nanonets/graft@0.15.0 via scripts/trailcode*.cmd wrappers that cd into th",
+  "origin": "background_review",
+  "created_at": 1793092762.0452218,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode/Graft in Hermes is pinned to @nanonets/graft@0.15.0 via scripts/trailcode*.cmd wrappers that cd into the indexed repo first. Newer 0.25.x serves deferred tools this client reads as empty; the server only sees the repo in its working folder, so an index must exist there (graft build) or queries return nothing."
+      },
+      {
+        "action": "add",
+        "content": "n8n MCP (https://neodevstudio-n8n.hf.space/mcp-server/http) supports OAuth DCR at /mcp-oauth/register, but Hermes needs a fixed callback: set mcp_servers.n8n.oauth.redirect_port (e.g. 18923), register that exact http://127.0.0.1:PORT/callback, save client_id/secret, then user runs hermes mcp login n8n in their own terminal. Token auth via headers works as fallback."
+      },
+      {
+        "action": "add",
+        "content": "Supabase broad-door MCP URLs (no project_ref, 6 feature groups) require an explicit project id on every call; main project_ref iovbjaljwxwxchumnyoc. Tavily runs via shared rotator F:/CD/Opencode/.opencode/tools/tavily-rotator/launcher.mjs with TAVILY_DEFAULT_DEPTH=advanced."
+      }
+    ]
+  }
+}

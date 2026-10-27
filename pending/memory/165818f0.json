@@ -1,0 +1,46 @@
+{
+  "id": "165818f0",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 8 op(s) to memory: - add: TrailCode pin @nanonets/graft@0.15.0 (0.25.x reads as 0 tools). Wrappers in scripts/trailcode*.cmd must cd to ind",
+  "origin": "background_review",
+  "created_at": 1793119254.650467,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode pin @nanonets/graft@0.15.0 (0.25.x reads as 0 tools). Wrappers in scripts/trailcode*.cmd must cd to indexed repo; quote paths with spaces."
+      },
+      {
+        "action": "add",
+        "content": "My map: skills/memories/scripts/plugins/cron/hooks/platforms/shared (419 nodes, no --deep). Neocoder door: Opencode/Projects/neodev-portal (972 nodes). One server = one repo."
+      },
+      {
+        "action": "add",
+        "content": "n8n https://neodevstudio-n8n.hf.space, MCP at /mcp-server/http. Hermes login CLI can't finish OAuth: manual PKCE (redirect_port 18923, exact callback, all 16 scopes), local listener, store n8n.json+.meta+.client. Update client file BEFORE storing or manager purges tokens."
+      },
+      {
+        "action": "add",
+        "content": "n8n JWTs expire fast (401s recur); OAuth+refresh is durable. mcp test counts tools only; prove with live tools/call + listing."
+      },
+      {
+        "action": "add",
+        "content": "Supabase broad doors need explicit project_id; main project iovbjaljwxwxchumnyoc."
+      },
+      {
+        "action": "add",
+        "content": "Tavily rotator: Opencode/.opencode/tools/tavily-rotator/launcher.mjs, 20 keys, TAVILY_DEFAULT_DEPTH=advanced."
+      },
+      {
+        "action": "add",
+        "content": "0-tools test can mean wrong cwd, missing index, or new-version tools (not dead server). Login needs auth=oauth; key-header servers need auth key absent."
+      },
+      {
+        "action": "add",
+        "content": "Vision-tool at scripts/vision-tool + wrapper, key in .env; native vision default, tool is backup."
+      }
+    ]
+  }
+}

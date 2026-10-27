@@ -1,0 +1,18 @@
+{
+  "id": "edcf633a",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Owner Soham demands ASCII box tables (+--+ borders, | pipes, = header separator) for structured output, width-che",
+  "origin": "background_review",
+  "created_at": 1793042138.9258788,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Owner Soham demands ASCII box tables (+--+ borders, | pipes, = header separator) for structured output, width-checked by script before sending; plain text terminal, no markdown. Explain in simple words, no coder jargon. Every agent gets its own keys/tokens/logins, never shared or copied between agents. Setup is done only when proven by a live functional test, never by a tool count alone. Precision and faithfulness over speed; maps are pointers, always verify against the real file. For Neocoder handoffs, state end goals only, never step-by-step instructions."
+      }
+    ]
+  }
+}

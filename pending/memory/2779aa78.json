@@ -1,0 +1,18 @@
+{
+  "id": "2779aa78",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Soham is on PC with a wide terminal. Format replies wide and use the full width (wide tables, long lines). Do not",
+  "origin": "assistant_tool",
+  "created_at": 1792921317.010635,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham is on PC with a wide terminal. Format replies wide and use the full width (wide tables, long lines). Do not wrap at 60 chars or keep content in a narrow left column."
+      }
+    ]
+  }
+}

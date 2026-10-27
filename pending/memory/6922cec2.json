@@ -1,0 +1,18 @@
+{
+  "id": "6922cec2",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Uses opencode and hermes-agent skills only; does not want claude-code, codex, notion, airtable, box, himalaya, gi",
+  "origin": "background_review",
+  "created_at": 1792791926.0953565,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Uses opencode and hermes-agent skills only; does not want claude-code, codex, notion, airtable, box, himalaya, gif-search, google-workspace."
+      }
+    ]
+  }
+}

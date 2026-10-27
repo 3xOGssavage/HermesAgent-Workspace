@@ -1,0 +1,26 @@
+{
+  "id": "88436af4",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to user profile: - add: Soham reads in plain terminal: always format structured output as ASCII box tables (+--+ borders, | pipes, = unde",
+  "origin": "background_review",
+  "created_at": 1793036099.2994304,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham reads in plain terminal: always format structured output as ASCII box tables (+--+ borders, | pipes, = under header), width-checked before sending; never use markdown tables. He corrects this every time it slips."
+      },
+      {
+        "action": "add",
+        "content": "When delegating work to Neocoder, state end goals only with proof requirements (diff, live tests) — never instruct it how to do the job."
+      },
+      {
+        "action": "add",
+        "content": "Standing rules: separate keys/tokens per agent (never copy secrets between agents); precision over speed for codebase search (maps are pointers, always verify in the real file before acting); plan first, execute only on his go."
+      }
+    ]
+  }
+}

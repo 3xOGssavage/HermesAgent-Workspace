@@ -1,0 +1,22 @@
+{
+  "id": "270ca41e",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: Every agent gets its own keys, tokens and credentials: never copy secrets between Hermes and Neocoder or into sha",
+  "origin": "background_review",
+  "created_at": 1793097494.7846603,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Every agent gets its own keys, tokens and credentials: never copy secrets between Hermes and Neocoder or into shared files, and never reuse one agent's login for the other."
+      },
+      {
+        "action": "add",
+        "content": "Setup jobs must finish fully with a live test per component before calling done; user handles their own steps (keys, clicks, approvals) when asked and expects to be told exactly what is needed."
+      }
+    ]
+  }
+}

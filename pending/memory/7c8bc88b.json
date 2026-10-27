@@ -1,0 +1,18 @@
+{
+  "id": "7c8bc88b",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: hermes mcp add is interactive: pipe Y via stdin; --args must be LAST (all --env/--command/--connect-timeout befor",
+  "origin": "background_review",
+  "created_at": 1792850596.7397494,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "hermes mcp add is interactive: pipe Y via stdin; --args must be LAST (all --env/--command/--connect-timeout before it) or env flags get swallowed as args. Hermes tavily mirrors Neocoder rotator at F:/CD/Opencode/.opencode/tools/tavily-rotator/launcher.mjs (node stdio, TAVILY_API_KEY_1..20 in server env, max 20, shared state file); MCP subprocesses get filtered env so keys must be passed explicitly via --env."
+      }
+    ]
+  }
+}

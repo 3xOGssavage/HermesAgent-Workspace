@@ -1,0 +1,18 @@
+{
+  "id": "94945139",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Each agent gets its own separate API keys and logins: Hermes and Neocoder never share credentials; when the same",
+  "origin": "background_review",
+  "created_at": 1792952954.2464454,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Each agent gets its own separate API keys and logins: Hermes and Neocoder never share credentials; when the same service is set up in both, create fresh keys per agent."
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "174d7700",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Dual-agent setup on this PC: Neohelper (Hermes, daily work) plus Neocoder (OpenCode CLI, coding). They share the",
+  "origin": "background_review",
+  "created_at": 1792952954.2909856,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Dual-agent setup on this PC: Neohelper (Hermes, daily work) plus Neocoder (OpenCode CLI, coding). They share the Tavily rotator launcher and state file under F:/CD/Opencode/.opencode/tools/tavily-rotator/ (20-key pool). Hermes MCP setup lessons live in the hermes-mcp-setup skill."
+      }
+    ]
+  }
+}

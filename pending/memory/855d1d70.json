@@ -1,0 +1,18 @@
+{
+  "id": "855d1d70",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Robust goal for Hermes MCPs: full read, write, edit, and manage access on everything Soham owns (all projects, al",
+  "origin": "background_review",
+  "created_at": 1792961401.3003032,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Robust goal for Hermes MCPs: full read, write, edit, and manage access on everything Soham owns (all projects, all zones), never a narrowed 1:1 copy of Neocoder's scoped configs. Separate credentials per agent."
+      }
+    ]
+  }
+}

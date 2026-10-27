@@ -1,0 +1,14 @@
+{
+  "id": "ff913d20",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to memory: TrailCode/Graft MCP in Hermes: pin @nanonets/graft@0.15.0 (0.25.x serves deferred tools; Hermes client lists 0 tools). S",
+  "origin": "background_review",
+  "created_at": 1793013901.6859112,
+  "payload": {
+    "action": "add",
+    "target": "memory",
+    "content": "TrailCode/Graft MCP in Hermes: pin @nanonets/graft@0.15.0 (0.25.x serves deferred tools; Hermes client lists 0 tools). Server resolves its repo from process cwd, so each server needs a .cmd wrapper that cds to the indexed repo first (quote the path: spaces break args). hermes mcp test showing 6 tools does NOT prove a graph exists; always verify with a live graft_find_code query (empty graph answers no matching nodes). Maps are per-project; Opencode root has no map (per-project graphs under Projects/). Hermes map covers skills/memories/scripts/plugins/cron/hooks/platforms/shared; rebuild after big folder changes.",
+    "old_text": null
+  }
+}

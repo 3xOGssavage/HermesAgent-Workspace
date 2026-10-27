@@ -1,0 +1,69 @@
+{
+  "jobs": [
+    {
+      "id": "cd72f3ab787b",
+      "name": "auto-prune-empty-sessions",
+      "prompt": "Safest cleanup of Hermes empty sessions. Work in F:\\CD\\Hermes Agent. Steps: 1. Run hermes sessions prune --max-messages 0 --dry-run and show the list. 2. Only if every listed session has 0 msgs and no title, run hermes sessions prune --max-messages 0 --yes to delete them. 3. Never delete sessions with 1 or more messages, never use --include-pinned or --include-archived, never use --force, never touch config or state.db directly. 4. Then run hermes sessions stats and report how many empties were removed and that the real chats are untouched.",
+      "skills": [
+        "hermes-agent"
+      ],
+      "skill": "hermes-agent",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 17 * * *",
+        "display": "every day at 5pm"
+      },
+      "schedule_display": "every day at 5pm",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-10-23T17:12:11.023802+05:30",
+      "next_run_at": "2026-10-28T17:00:00+05:30",
+      "last_run_at": "2026-10-27T17:01:06.582134+05:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "local",
+        "chat_id": "local-2479c4eceabb7b122cb29563f0a69e769506c7dfb1351902e2885dd998ec0e2e",
+        "chat_name": null,
+        "thread_id": null,
+        "user_id": "sid:S-1-5-21-3101644811-2335961832-2162672925-1001",
+        "scope_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-10-27T17:00:00+05:30",
+        "dispatched_at": "2026-10-27T17:00:42.007118+05:30",
+        "lateness_seconds": 42.0,
+        "kind": "on_time"
+      },
+      "fire_claim": null,
+      "canonical_completions": [
+        "24957fd3ab354dd9820cd95a4785ccf2"
+      ]
+    }
+  ],
+  "updated_at": "2026-10-27T17:01:06.611669+05:30"
+}

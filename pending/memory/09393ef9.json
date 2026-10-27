@@ -1,0 +1,26 @@
+{
+  "id": "09393ef9",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to memory: - add: Graft/Trail-Code MCP must run pinned @nanonets/graft@0.15.0 via a .cmd wrapper that cds into the indexed repo; 0.",
+  "origin": "background_review",
+  "created_at": 1793088297.5608153,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Graft/Trail-Code MCP must run pinned @nanonets/graft@0.15.0 via a .cmd wrapper that cds into the indexed repo; 0.25.x serves deferred tools this client reads as 0, and the server resolves its repo from cwd (needs explicit dir arg with quotes for spaced paths)."
+      },
+      {
+        "action": "add",
+        "content": "n8n instance at https://neodevstudio-n8n.hf.space (MCP at /mcp-server/http, REST at /api/v1); Hermes n8n MCP uses per-client Bearer JWT (aud mcp-server-api); workflow edits use the Settings API key via X-N8N-API-KEY header."
+      },
+      {
+        "action": "add",
+        "content": "Neocoder mirrors live in F:/CD/Opencode/opencode.json (backup before editing; JSON-validate before restart); its MCP cwd resolves per-project, so trailcode there stays folder-agnostic while Hermes wrappers pin explicit repo paths."
+      }
+    ]
+  }
+}

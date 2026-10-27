@@ -1,0 +1,22 @@
+{
+  "id": "91f13b7e",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: For codebase questions Soham wants precision over speed: index/map answers are leads only; open the real file at",
+  "origin": "background_review",
+  "created_at": 1793009708.841656,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "For codebase questions Soham wants precision over speed: index/map answers are leads only; open the real file at the stated line and verify before acting or claiming. Never present map output as verified fact."
+      },
+      {
+        "action": "add",
+        "content": "Soham's standing setup naming: in Hermes the TrailCode servers are trailcode (own Hermes home map) and trailcode-neocoder (Neocoder project map); in Opencode the mirror names are trailcode (own map) and trailcode-neohelper (Hermes map). Keep these names stable so neither side gets confused."
+      }
+    ]
+  }
+}

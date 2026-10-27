@@ -1,0 +1,14 @@
+{
+  "id": "b9a7cebc",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham wants structured replies without tables by default, use tables only when the data truly needs a table.",
+  "origin": "assistant_tool",
+  "created_at": 1792781806.9588723,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham wants structured replies without tables by default, use tables only when the data truly needs a table.",
+    "old_text": null
+  }
+}

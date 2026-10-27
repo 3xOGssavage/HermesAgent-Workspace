@@ -1,0 +1,14 @@
+{
+  "id": "52663b2c",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham prefers structured output in tabular format.",
+  "origin": "assistant_tool",
+  "created_at": 1792756484.8618531,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham prefers structured output in tabular format.",
+    "old_text": null
+  }
+}

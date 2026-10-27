@@ -1,0 +1,22 @@
+{
+  "id": "b691d04d",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: Soham reads in plain Windows terminal: always format structured output as ASCII box tables (+--+ borders, | pipes",
+  "origin": "background_review",
+  "created_at": 1793092762.006596,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham reads in plain Windows terminal: always format structured output as ASCII box tables (+--+ borders, | pipes, = under header), full width, short phrases per cell, split by topic. Verify every table with a script width-check (all lines equal length) before sending, because broken tables cost trust."
+      },
+      {
+        "action": "add",
+        "content": "Every agent gets its own keys/tokens/logins; never copy secrets between Hermes and Neocoder. Verify claims with live tool output before stating them; verify-first beats assuming. When giving Neocoder work, send end-goals-only prompts (what + proof), never step-by-step instructions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "06eafd8f",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Prefers separate fresh credentials per agent rather than sharing Neocoder's tokens (chose a fresh GitHub PAT and",
+  "origin": "background_review",
+  "created_at": 1792929960.5895574,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Prefers separate fresh credentials per agent rather than sharing Neocoder's tokens (chose a fresh GitHub PAT and a new Supabase PAT instead of reusing the existing ones)."
+      }
+    ]
+  }
+}

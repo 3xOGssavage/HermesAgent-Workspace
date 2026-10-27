@@ -1,0 +1,18 @@
+{
+  "id": "36623141",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: MCP active: time, filesystem locked to F:\\CD\\Hermes Agent, github public-only no token; notion removed; hermes mc",
+  "origin": "background_review",
+  "created_at": 1792791926.5058794,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "MCP active: time, filesystem locked to F:\\CD\\Hermes Agent, github public-only no token; notion removed; hermes mcp serve idle not configured."
+      }
+    ]
+  }
+}

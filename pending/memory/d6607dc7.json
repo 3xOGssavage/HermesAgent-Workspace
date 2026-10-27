@@ -1,0 +1,14 @@
+{
+  "id": "d6607dc7",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham prefers structured output in neat ASCII box tables with borders, split into small boxes with short rows, always fo",
+  "origin": "background_review",
+  "created_at": 1792777141.9756436,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham prefers structured output in neat ASCII box tables with borders, split into small boxes with short rows, always formatted for readability.",
+    "old_text": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "21c36c47",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to memory: - add: Supabase MCP broad doors (no project_ref) require explicit project_id on every call. Standing rule both agents: S",
+  "origin": "background_review",
+  "created_at": 1793021292.4232566,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Supabase MCP broad doors (no project_ref) require explicit project_id on every call. Standing rule both agents: Supabase work starts with list_projects then confirm project_id; main project iovbjaljwxwxchumnyoc."
+      },
+      {
+        "action": "add",
+        "content": "Graft/TrailCode MCP pinned to @nanonets/graft@0.15.0 via wrapper scripts in F:/CD/Hermes Agent/scripts/. 0.25.x serves deferred tools this client reads as 0 tools. Server resolves repo from cwd, so each wrapper cds to the indexed repo first (trailcode=Hermes home map, trailcode-neocoder=Opencode neodev-portal map). Quote paths (space in Hermes Agent)."
+      }
+    ]
+  }
+}

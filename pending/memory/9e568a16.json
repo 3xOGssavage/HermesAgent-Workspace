@@ -1,0 +1,22 @@
+{
+  "id": "9e568a16",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to memory: - add: TrailCode/Graft in Hermes pinned to @nanonets/graft@0.15.0 via wrapper .cmd scripts (scripts/trailcode*.cmd) that",
+  "origin": "background_review",
+  "created_at": 1793126823.9714303,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode/Graft in Hermes pinned to @nanonets/graft@0.15.0 via wrapper .cmd scripts (scripts/trailcode*.cmd) that cd into the indexed repo first: 0.25.x serves deferred tools this client reads as zero, and the server resolves its repo from cwd, not from the dir arg."
+      },
+      {
+        "action": "add",
+        "content": "n8n instance https://neodevstudio-n8n.hf.space: Hermes connects via OAuth (manual PKCE flow; CLI login cannot complete it — needs oauth.redirect_port 18923, all 16 n8n scopes, manual grant capture). MCP JWT access tokens rotate fast (401s) — OAuth with stored refresh token is the durable door. Builder REST key lives in session scratch only."
+      }
+    ]
+  }
+}

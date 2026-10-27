@@ -1,0 +1,18 @@
+{
+  "id": "180862af",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Soham demands ASCII box tables (+--+ borders, | pipes, = under header) for any structured output, and they must b",
+  "origin": "background_review",
+  "created_at": 1793020082.7930126,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham demands ASCII box tables (+--+ borders, | pipes, = under header) for any structured output, and they must be script width-checked before sending after past breakage screenshots. Plain unpadded pipes are rejected. Applies every session."
+      }
+    ]
+  }
+}

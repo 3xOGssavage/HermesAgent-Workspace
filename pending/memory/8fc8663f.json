@@ -1,0 +1,26 @@
+{
+  "id": "8fc8663f",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to memory: - add: hermes mcp add prompts Enable-all-tools Y/n and cancels without TTY input; piping printf Y-newline into it comple",
+  "origin": "background_review",
+  "created_at": 1792847385.7578998,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "hermes mcp add prompts Enable-all-tools Y/n and cancels without TTY input; piping printf Y-newline into it completes non-interactive adds, and hermes mcp list plus hermes mcp test NAME verify the result."
+      },
+      {
+        "action": "add",
+        "content": "Hermes MCP stdio subprocesses inherit a filtered env, so keys like TAVILY_API_KEY_* must be passed explicitly via --env; server paths with spaces need quoting and first-time npx servers need a longer --connect-timeout (120s worked for server-filesystem)."
+      },
+      {
+        "action": "add",
+        "content": "Opencode reads Tavily, Cloudflare, and Supabase keys from shell env (TAVILY_API_KEY_1..5, CLOUDFLARE_API_TOKEN, SUPABASE_ACCESS_TOKEN), not from config files; its Tavily key-rotator launcher lives at F:/CD/Opencode/.opencode/tools/tavily-rotator/launcher.mjs with state in .opencode/tavily-state.json."
+      }
+    ]
+  }
+}

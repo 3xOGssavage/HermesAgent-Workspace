@@ -1,0 +1,38 @@
+{
+  "id": "0a69cfd8",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 6 op(s) to user profile: - add: Soham is a partial/vibe coder: explain everything in simple words, no jargon, never assume coding knowledge.\n- ad",
+  "origin": "background_review",
+  "created_at": 1793119240.9461215,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham is a partial/vibe coder: explain everything in simple words, no jargon, never assume coding knowledge."
+      },
+      {
+        "action": "add",
+        "content": "Soham reads in a plain terminal where markdown does not render: use ASCII +--+ box tables with padded pipes, = under the header, script-checked equal widths; short labeled sections; never emit unpadded pipe tables."
+      },
+      {
+        "action": "add",
+        "content": "Verify-first rule: always search the web when unsure; never guess; live-test every MCP change (tools/list count alone is not proof, run a real query or call)."
+      },
+      {
+        "action": "add",
+        "content": "Separate keys/tokens/logins per agent (Neohelper vs Neocoder); never copy secrets between agents or homes; 90-day expirations; secrets in .env only with masked values; delete key files after use."
+      },
+      {
+        "action": "add",
+        "content": "Naming: my code-map server is trailcode, Neocoder's is trailcode-neocoder; I am Neohelper, sibling agent is Neocoder; my n8n OAuth client is named Hermes Agent."
+      },
+      {
+        "action": "add",
+        "content": "Precision over speed for codebase answers: a TrailCode map is a pointer only, always open the real file:line before acting; keep maps fresh after big changes; skipped the LLM --deep layer deliberately (exact facts over guesses)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "4c893aab",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Output formatting (standing): plain terminal, simple words. When structured output is needed, use ASCII box tables (+--+",
+  "origin": "background_review",
+  "created_at": 1793013898.098645,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Output formatting (standing): plain terminal, simple words. When structured output is needed, use ASCII box tables (+--+ borders, | pipes, = under header, padded cells) and verify all lines equal width with a script before sending; never send an unchecked table. Prefer small split tables over one giant table. Proactively use tables for structured results without being asked.",
+    "old_text": null
+  }
+}

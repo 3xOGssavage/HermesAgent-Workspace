@@ -1,0 +1,18 @@
+{
+  "id": "74073d8e",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Each agent gets its own separate keys, tokens, and credentials (Hermes vs Neocoder never share). Goal for Hermes",
+  "origin": "background_review",
+  "created_at": 1792944612.4111853,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Each agent gets its own separate keys, tokens, and credentials (Hermes vs Neocoder never share). Goal for Hermes is robust, efficient, and independent with full read/write/edit/manage on everything Soham owns, never a 1:1 copy of Neocoder's setup."
+      }
+    ]
+  }
+}

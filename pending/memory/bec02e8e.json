@@ -1,0 +1,18 @@
+{
+  "id": "bec02e8e",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Whenever Soham asks to setup or configure any tool, MCP, skill, or plugin, always drive it to fully done, verifie",
+  "origin": "assistant_tool",
+  "created_at": 1792881638.5140333,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Whenever Soham asks to setup or configure any tool, MCP, skill, or plugin, always drive it to fully done, verified, and functional every time. Never leave half-done setups. Ask him for whatever is needed (keys, logins, confirmations) and keep going until tested OK."
+      }
+    ]
+  }
+}

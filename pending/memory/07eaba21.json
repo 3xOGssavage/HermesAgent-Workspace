@@ -1,0 +1,18 @@
+{
+  "id": "07eaba21",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Auto-pick output shape without being asked: results, lists, comparisons, inventories, and statuses go in wide tab",
+  "origin": "assistant_tool",
+  "created_at": 1792921534.2342825,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Auto-pick output shape without being asked: results, lists, comparisons, inventories, and statuses go in wide tables; stories, explanations, and how-tos stay as short structured sections. Never wait to be told to use a table."
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1ae365ae",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to memory: - add: TrailCode/Graft in Hermes: pin @nanonets/graft@0.15.0 (0.25.x serves deferred tools this client reads as 0). Serv",
+  "origin": "background_review",
+  "created_at": 1793095005.6994207,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode/Graft in Hermes: pin @nanonets/graft@0.15.0 (0.25.x serves deferred tools this client reads as 0). Server resolves repo from its working folder, so each map needs a starter script that cds into the indexed repo first; quote paths (Hermes Agent has a space). A passing tools/list proves nothing: always verify with a live find_code query, empty means missing/stale graph, rebuild with graft build."
+      },
+      {
+        "action": "add",
+        "content": "Supabase broad MCP doors (no project lock) require explicit project_id on calls; main project_ref iovbjaljwxwxchumnyoc. Never assume the project: list first when ambiguous."
+      },
+      {
+        "action": "add",
+        "content": "n8n MCP OAuth for Hermes was completed manually (CLI login aborts pre-URL): DCR at /mcp-oauth/register with exact redirect http://127.0.0.1:18923/callback + pinned oauth.redirect_port 18923 + n8n scope names (workflow:read etc, never openid). Tokens live in mcp-tokens/n8n.json with n8n.meta.json. Token-header auth remains a working fallback."
+      }
+    ]
+  }
+}

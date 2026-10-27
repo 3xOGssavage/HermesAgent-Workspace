@@ -1,0 +1,18 @@
+{
+  "id": "87f3df45",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to memory: - add: Hermes setup debloated Oct 2026: 8 skills removed (claude-code, codex, notion, airtable, himalaya, gif-search, go",
+  "origin": "background_review",
+  "created_at": 1792839273.3815699,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes setup debloated Oct 2026: 8 skills removed (claude-code, codex, notion, airtable, himalaya, gif-search, google-workspace, box), 45 skills remain. Active MCPs enabled: time, filesystem, github. 29 optional-mcps catalog folders deleted, 37 remain. Portal connectors all disconnected."
+      }
+    ]
+  }
+}

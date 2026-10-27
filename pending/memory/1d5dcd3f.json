@@ -1,0 +1,22 @@
+{
+  "id": "1d5dcd3f",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: Soham rule: every agent gets its own keys, tokens and logins; never copy secrets between Hermes and Neocoder. Sam",
+  "origin": "background_review",
+  "created_at": 1793095005.7317264,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham rule: every agent gets its own keys, tokens and logins; never copy secrets between Hermes and Neocoder. Same settings both sides, separate credentials always."
+      },
+      {
+        "action": "add",
+        "content": "Soham expects full-setup verification for every component: live test output, not claims. A green tools/list alone is not proof; run a real query/call before calling anything done."
+      }
+    ]
+  }
+}

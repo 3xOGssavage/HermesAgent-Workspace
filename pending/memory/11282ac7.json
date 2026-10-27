@@ -1,0 +1,18 @@
+{
+  "id": "11282ac7",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Owner reads in plain terminal: always use ASCII box tables (+--+ borders, = under header, width-checked via scrip",
+  "origin": "background_review",
+  "created_at": 1793054076.5307875,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Owner reads in plain terminal: always use ASCII box tables (+--+ borders, = under header, width-checked via script before sending), short cells, split boxes by topic; explain in simple words (partial vibe-coder). Demands proof over claims: verify with live tests and show checkable evidence, never ask for trust. Standing rules: separate keys/tokens per agent, 90-day expirations, plan-then-execute with explicit go, end-goals-only prompts for Neocoder (never instruct it how)."
+      }
+    ]
+  }
+}

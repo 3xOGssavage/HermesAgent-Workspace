@@ -1,0 +1,26 @@
+{
+  "id": "e9b7086c",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to user profile: - add: Owner reads in plain terminal: always use ASCII +--+ box tables with width-checked rows, simple words, no markdow",
+  "origin": "background_review",
+  "created_at": 1793135630.9851882,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Owner reads in plain terminal: always use ASCII +--+ box tables with width-checked rows, simple words, no markdown. Explain like he is a partial coder."
+      },
+      {
+        "action": "add",
+        "content": "Never claim any setup works without a live test proving it (mcp test, real query, real execution). Report honestly when blocked; never substitute."
+      },
+      {
+        "action": "add",
+        "content": "Every agent gets its own keys/tokens/logins, never shared or copied between agents. All expiring credentials use 90-day expiry."
+      }
+    ]
+  }
+}

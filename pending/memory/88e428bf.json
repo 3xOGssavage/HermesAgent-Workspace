@@ -1,0 +1,22 @@
+{
+  "id": "88e428bf",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: Soham reads in plain terminal (no markdown render). Structured output = ASCII box tables only (+--+ borders, | pi",
+  "origin": "background_review",
+  "created_at": 1793021288.8313704,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham reads in plain terminal (no markdown render). Structured output = ASCII box tables only (+--+ borders, | pipes, = under header), widths script-checked before sending; he is on PC, use full width. Explain in simple words; he is a partial/vibe coder."
+      },
+      {
+        "action": "add",
+        "content": "Standing rule: every agent gets its own keys, tokens and credentials. Mirror settings between Hermes and Neocoder, never copy secrets across."
+      }
+    ]
+  }
+}

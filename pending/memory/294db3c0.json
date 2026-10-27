@@ -1,0 +1,14 @@
+{
+  "id": "294db3c0",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham wants every reply formatted for easy reading with short sections and tables, or he will ignore long text.",
+  "origin": "assistant_tool",
+  "created_at": 1792757263.2664208,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham wants every reply formatted for easy reading with short sections and tables, or he will ignore long text.",
+    "old_text": null
+  }
+}

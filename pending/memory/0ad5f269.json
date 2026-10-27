@@ -1,0 +1,18 @@
+{
+  "id": "0ad5f269",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Tavily MCP fixed defaults for every call. Search: depth advanced, chunks 3, max_results 20, raw content true. Ext",
+  "origin": "assistant_tool",
+  "created_at": 1792877231.8082364,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Tavily MCP fixed defaults for every call. Search: depth advanced, chunks 3, max_results 20, raw content true. Extract: chunks 3, depth advanced, markdown. Crawl: max_depth 5, max_breadth 80, limit 100 (raise if task needs), depth advanced, markdown. Map: max_depth 5, max_breadth 80, limit 100 (raise if needed). Chunks capped 3 by Tavily API itself."
+      }
+    ]
+  }
+}

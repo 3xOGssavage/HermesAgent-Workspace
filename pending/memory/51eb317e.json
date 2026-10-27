@@ -1,0 +1,14 @@
+{
+  "id": "51eb317e",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to memory: Hermes creates empty 0-message session on every bare launch including sessions commands; safe cleanup is prune --max-mes",
+  "origin": "background_review",
+  "created_at": 1792755873.9022212,
+  "payload": {
+    "action": "add",
+    "target": "memory",
+    "content": "Hermes creates empty 0-message session on every bare launch including sessions commands; safe cleanup is prune --max-messages 0 only and open with --continue or --resume, auto-clean runs daily 11am.",
+    "old_text": null
+  }
+}

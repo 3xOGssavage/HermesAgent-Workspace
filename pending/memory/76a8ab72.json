@@ -1,0 +1,18 @@
+{
+  "id": "76a8ab72",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Soham uses opencode + hermes-agent only; dropped claude-code, codex, notion, airtable, himalaya, gif-search, goog",
+  "origin": "background_review",
+  "created_at": 1792795173.2522674,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham uses opencode + hermes-agent only; dropped claude-code, codex, notion, airtable, himalaya, gif-search, google-workspace, box. Prefers short simple plain-terminal answers with small ASCII tables and confirm-before-remove for deletions."
+      }
+    ]
+  }
+}

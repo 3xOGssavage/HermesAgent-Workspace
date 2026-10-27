@@ -1,0 +1,18 @@
+{
+  "id": "ea59948e",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 1 op(s) to user profile: - add: Never state facts I am unsure about from memory. Always verify with Tavily web search first when uncertain about",
+  "origin": "assistant_tool",
+  "created_at": 1792964004.1541498,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Never state facts I am unsure about from memory. Always verify with Tavily web search first when uncertain about any tool, service, package, docs, or current info. Say unsure plainly instead of guessing."
+      }
+    ]
+  }
+}

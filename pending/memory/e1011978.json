@@ -1,0 +1,26 @@
+{
+  "id": "e1011978",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 3 op(s) to memory: - add: TrailCode MCP pinned to @nanonets/graft@0.15.0 via wrapper scripts in F:/CD/Hermes Agent/scripts/ (trailcode-mcp.",
+  "origin": "background_review",
+  "created_at": 1793036099.3357303,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "TrailCode MCP pinned to @nanonets/graft@0.15.0 via wrapper scripts in F:/CD/Hermes Agent/scripts/ (trailcode-mcp.cmd -> Hermes home map, trailcode-neocoder-mcp.cmd -> F:/CD/Opencode/Projects/neodev-portal map); 0.25.x serves deferred tools this client reads as zero. One server covers one repo root; root has no graph."
+      },
+      {
+        "action": "add",
+        "content": "Supabase broad MCP doors (no project_ref) require explicit project_id on every call; main project is iovbjaljwxwxchumnyoc. Standing rule on both agents: Supabase work starts with list_projects then confirm project_id, never assume."
+      },
+      {
+        "action": "add",
+        "content": "Vision-tool import to Hermes on hold: Neocoder backend failing (400s), needs own Gemini key + AppData config + Startup watchdog; import only after live image test proves backend alive."
+      }
+    ]
+  }
+}

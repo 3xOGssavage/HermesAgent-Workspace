@@ -1,0 +1,30 @@
+{
+  "id": "a2f3121f",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 4 op(s) to memory: - add: Hermes runs 18 MCPs live: tavily(20-key rotator), time, filesystem, github, context7, supabase+supabase-admin(bro",
+  "origin": "background_review",
+  "created_at": 1793097494.8154976,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes runs 18 MCPs live: tavily(20-key rotator), time, filesystem, github, context7, supabase+supabase-admin(broad, explicit project_id required), vercel, cloudflare(union token), playwright, chrome-devtools, grep, ddddocr, sentry, trailcode(own map), trailcode-neocoder(portal map), vision-tool(GEMINI_API_KEY in .env), n8n via OAuth grant with refresh token."
+      },
+      {
+        "action": "add",
+        "content": "TrailCode pinned to 0.15.0 global binary (0.25.x serves unreadable deferred tools); one server per repo map via .cmd launcher that cds into the graph folder; Hermes own map covers 8 dirs."
+      },
+      {
+        "action": "add",
+        "content": "n8n at https://neodevstudio-n8n.hf.space: MCP door takes Connect-dialog JWT (mcp-server-api) or OAuth grant; REST API needs the separate Settings key (public-api). Web Search AI Agent + Finance Research + Playground chat agents live there."
+      },
+      {
+        "action": "add",
+        "content": "Neocoder home is F:/CD/Opencode; its memory.jsonl stays Neocoder-only by user decision, never imported."
+      }
+    ]
+  }
+}

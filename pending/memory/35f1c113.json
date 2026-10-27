@@ -1,0 +1,22 @@
+{
+  "id": "35f1c113",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: Soham reads in plain Windows terminal: format structured output as ASCII box tables (+--+ borders, | pipes, = und",
+  "origin": "background_review",
+  "created_at": 1793117855.2028966,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham reads in plain Windows terminal: format structured output as ASCII box tables (+--+ borders, | pipes, = under header), width-checked, short phrases per cell; never markdown tables. Keep language simple, he is a partial/vibe coder."
+      },
+      {
+        "action": "add",
+        "content": "Standing rules for all setups: verify every server with a live test (tool count alone is not proof, run a real query), separate keys/tokens/logins per agent (never copy secrets between Hermes and Neocoder), 90-day expirations on all tokens, and for Neocoder give end-goals prompts not step-by-step instructions."
+      }
+    ]
+  }
+}

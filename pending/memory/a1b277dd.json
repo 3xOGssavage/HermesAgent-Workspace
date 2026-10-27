@@ -1,0 +1,22 @@
+{
+  "id": "a1b277dd",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to memory: - add: hermes mcp add keeps only the LAST --env flag and treats everything after --args as args; to set many env vars, r",
+  "origin": "background_review",
+  "created_at": 1792875305.0791368,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "hermes mcp add keeps only the LAST --env flag and treats everything after --args as args; to set many env vars, run mcp add first then hermes config set mcp_servers.<name>.env.KEY value per key. Never hand-edit config.yaml."
+      },
+      {
+        "action": "add",
+        "content": "Hermes Tavily uses Neocoder rotator at F:/CD/Opencode/.opencode/tools/tavily-rotator/launcher.mjs with 20 TAVILY_API_KEY_1..20 in config plus TAVILY_DEFAULT_DEPTH=advanced; state file shared with Neocoder; rotator tools are tavily-search/extract/crawl/map/usage (no research tool)."
+      }
+    ]
+  }
+}

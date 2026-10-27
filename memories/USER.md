@@ -1,0 +1,1 @@
+Owner's name is Soham (online: 3xOGsavage). Explain everything in simple words — he is not a coder , just partial coder / vibe coder.

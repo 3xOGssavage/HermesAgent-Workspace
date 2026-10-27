@@ -1,0 +1,14 @@
+{
+  "id": "f704f373",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham works with opencode and Hermes Agent only (Neocoder is the coding sibling agent); he asked to remove the claude-co",
+  "origin": "background_review",
+  "created_at": 1792847388.8546255,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham works with opencode and Hermes Agent only (Neocoder is the coding sibling agent); he asked to remove the claude-code, codex, notion, airtable, himalaya, gif-search, google-workspace, and box skills plus unused MCP catalog items to keep the setup lean, and prefers short simple-word explanations with numbered plain-terminal tables.",
+    "old_text": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "df7db00b",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 4 op(s) to memory: - add: Graft/TrailCode: pin @nanonets/graft@0.15.0; 0.25.x serves deferred tools Hermes cannot read. Server resolves rep",
+  "origin": "background_review",
+  "created_at": 1793135637.1444721,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Graft/TrailCode: pin @nanonets/graft@0.15.0; 0.25.x serves deferred tools Hermes cannot read. Server resolves repo from cwd, so run it via wrapper script that cds into the indexed repo first."
+      },
+      {
+        "action": "add",
+        "content": "Git on this Windows host: set repo-local credential.helper to empty to stop CredentialHelperSelector GUI popups; use git rm -r --cached -f when a locked file aborts unstage; secrets (.env, tokens, mcp-tokens, pairing, state) never enter repos."
+      },
+      {
+        "action": "add",
+        "content": "n8n nodes: SplitInBatches outputs are [done, loop] (not loop-first); Code node defaults to runOnceForAllItems so per-item JS needs explicit mode; Switch v3.4 uses rules.values with renameOutput; Wait uses resume=timeInterval."
+      },
+      {
+        "action": "add",
+        "content": "Hermes mcp_servers entries used here: tavily via shared rotator launcher (20 keys, TAVILY_DEFAULT_DEPTH=advanced); trailcode/neocoder via .cmd wrappers; n8n remote https://neodevstudio-n8n.hf.space/mcp-server/http on OAuth with tokens in mcp-tokens/n8n.json."
+      }
+    ]
+  }
+}

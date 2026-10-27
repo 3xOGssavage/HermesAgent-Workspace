@@ -1,0 +1,22 @@
+{
+  "id": "d6b028c0",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to memory: - add: Hermes 'mcp add' keeps only the LAST --env flag when repeated; to set multiple env vars use repeated 'hermes conf",
+  "origin": "background_review",
+  "created_at": 1792879904.4651082,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes 'mcp add' keeps only the LAST --env flag when repeated; to set multiple env vars use repeated 'hermes config set mcp_servers.NAME.env.KEY value' calls instead, then 'hermes mcp test NAME' to verify."
+      },
+      {
+        "action": "add",
+        "content": "Tavily rotator (F:/CD/Opencode/.opencode/tools/tavily-rotator) exposes tavily-search/extract/crawl/map/usage only, no research tool; official Tavily MCP is search+extract only. Default search depth follows TAVILY_DEFAULT_DEPTH env (else basic);-rotator caps chunks_per_source at 3 per Tavily API limit and shares state file tavily-state.json across agents."
+      }
+    ]
+  }
+}

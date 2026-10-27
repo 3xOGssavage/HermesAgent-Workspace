@@ -1,0 +1,14 @@
+{
+  "id": "64c88a6b",
+  "subsystem": "memory",
+  "action": "add",
+  "summary": "add to user profile: Soham reads in plain terminal (PC, wide screen): format structured output as ASCII box tables with padded +--+ borders,",
+  "origin": "background_review",
+  "created_at": 1793127644.868267,
+  "payload": {
+    "action": "add",
+    "target": "user",
+    "content": "Soham reads in plain terminal (PC, wide screen): format structured output as ASCII box tables with padded +--+ borders, pipes aligned, = under header, widths script-checked before sending. Write Windows paths plainly like F:/CD/Workshop, never spelled out. Keep language simple; he is a partial/vibe coder. He decides; I never act on shared/Neocoder state without his explicit go, and I verify every setup claim with a live test, never a config echo.",
+    "old_text": null
+  }
+}
