@@ -2546,7 +2546,7 @@ mcp_servers:
     enabled: true
     auth: oauth
     oauth:
-      client_id: 090a1fc8-f168-463a-9060-51ec195a13d5
-      client_secret: bafccf43d1cd77a6ea8c13aa1465aa956a55fd09c4d245988038c81894618e38
+      client_id: ${N8N_CLIENT_ID}
+      client_secret: ${N8N_CLIENT_SECRET}
       redirect_port: 18923
       scope: workflow:read workflow:write workflow:execute execution:read agent:read agent:write agent:execute credential:read dataTable:read dataTable:write project:read project:write tag:read communityPackage:install aiPreference:read aiPreference:write
