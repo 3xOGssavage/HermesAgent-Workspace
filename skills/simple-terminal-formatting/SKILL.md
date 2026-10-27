@@ -38,8 +38,8 @@ Every reply to Soham. Any summary, comparison, inventory, or status. Load before
 2. Shorten every cell first: cut filler, keep paths and versions exact.
 3. Pad topic column to equal width, then pipes, then plus-dash borders with equals row under header.
 4. Verify widths by script before sending: assert every line of the box has identical length; a box that looks aligned in your head still ships broken when one cell overflows. Never hand-align and send.
-4. Add a one-line takeaway above or below: Verdict, Result, Next move.
-5. Ask one clear next question at the end, never three.
+5. Add a one-line takeaway above or below: Verdict, Result, Next move.
+6. Ask one clear next question at the end, never three.
 
 ## Pitfalls
 

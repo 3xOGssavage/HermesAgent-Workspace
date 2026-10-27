@@ -32,6 +32,8 @@ Build and verify n8n workflows through `X-N8N-API-KEY` calls. Creation accepts a
 - SplitInBatches outputs are done-first: output 0 is done, output 1 is the loop. Wire backwards and the loop silently processes nothing while done emits raw items.
 - Loops need ONE re-entry edge: fan every branch output back and the shared batch state races, emitting partial dones. Fan Calc into the loop node once, hang side branches (switches, loggers) off the loop body as terminals.
 - Webhook trigger needs `httpMethod: POST` plus `responseMode: responseNode` when a Respond node answers; defaults (GET, onReceived) fail with 404/500 on real posts.
+- Wait node resume value is `timeInterval`, not `afterTimeInterval`: `{"resume": "timeInterval", "amount": 1, "unit": "minutes"}` — the wrong value fails at runtime complaining a date field is invalid.
+- Switch v3.4 routes with per-output `conditions` plus `renameOutput`/`outputKey`; give every output a destination, an unconnected branch drops its items silently.
 - A Respond node with no incoming data errors the run: every declared branch must either deliver or be a deliberate terminal.
 - Unused nodes still validate: a disconnected tool or responder can fail activation. Remove what the run does not need.
 - Community nodes must be INSTALLED on the instance, not just credentialed: a present credential with a missing package activates fine at create time then fails at activation with `Unrecognized node type`. Check before promising live search.

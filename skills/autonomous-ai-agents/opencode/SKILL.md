@@ -186,6 +186,10 @@ terminal(command="opencode stats")
 terminal(command="opencode stats --days 7 --models anthropic/claude-sonnet-4")
 ```
 
+## Sibling Handoffs (Neocoder runs this same opencode setup)
+
+When writing a task prompt for the sibling agent: state end-state plus required proof (exact diff, per-server test table, live listing), never step-by-step instructions — it plans its own house better than it follows yours. Name the stop conditions (needs a key, a login click, a restart) and where to halt instead of guessing. One verification round of its evidence closes the loop; a second opinion model adds nothing over live tests.
+
 ## Pitfalls
 
 - Interactive `opencode` (TUI) sessions require `pty=true`. The `opencode run` command does NOT need pty.
