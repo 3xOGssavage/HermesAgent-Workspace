@@ -35,3 +35,9 @@ shared/nous_auth.json
 *.lock
 .hermes_history
 pastes/
+gateway_state.json
+spawn-ledger.json
+channel_directory.json
+runtime/
+cron/ticker_heartbeat
+cron/ticker_last_success

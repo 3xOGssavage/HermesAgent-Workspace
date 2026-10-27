@@ -1,0 +1,22 @@
+{
+  "id": "90aa0e7a",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 2 op(s) to user profile: - add: Soham reads in plain terminal: use ASCII +--+ box tables with widths verified, short phrases, no markdown. Wants",
+  "origin": "background_review",
+  "created_at": 1793137381.1262383,
+  "payload": {
+    "action": "batch",
+    "target": "user",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Soham reads in plain terminal: use ASCII +--+ box tables with widths verified, short phrases, no markdown. Wants every setup fully done and live-verified (never half-done), tables checked before sending."
+      },
+      {
+        "action": "add",
+        "content": "Standing rules: every agent gets its own keys/tokens/credentials (never share or copy between Hermes and Neocoder); all tokens max 90-day expiry; secrets in .env only."
+      }
+    ]
+  }
+}

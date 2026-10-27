@@ -1,0 +1,38 @@
+{
+  "id": "c3ed9279",
+  "subsystem": "memory",
+  "action": "batch",
+  "summary": "apply 6 op(s) to memory: - add: Hermes mcp login (browser OAuth) fails for custom servers even with client_id set; work instead by manual PKCE: r",
+  "origin": "background_review",
+  "created_at": 1793137381.0945802,
+  "payload": {
+    "action": "batch",
+    "target": "memory",
+    "operations": [
+      {
+        "action": "add",
+        "content": "Hermes mcp login (browser OAuth) fails for custom servers even with client_id set; work instead by manual PKCE: register via server register endpoint, build authorize URL, catch code on localhost listener, exchange at token endpoint, store as mcp-tokens/<name>.json + .meta.json + .client.json (verified with n8n)."
+      },
+      {
+        "action": "add",
+        "content": "n8n SplitInBatches v3 outputs are [done, loop]: output 0 emits processedItems when finished, output 1 emits the next batch. Wire done->downstream and loop->back-edge accordingly."
+      },
+      {
+        "action": "add",
+        "content": "n8n Code node default mode is runOnceForAllItems ($json = first item only); set mode runOnceForEachItem explicitly for per-item JS, or iterate $input.all() in once mode."
+      },
+      {
+        "action": "add",
+        "content": "TrailCode/Graft: pin @nanonets/graft@0.15.0 because 0.25.x serves deferred tools this client reads as empty; the MCP server resolves its repo from cwd, so run it via wrapper scripts that cd into the indexed repo first."
+      },
+      {
+        "action": "add",
+        "content": "Windows git defaults to helper-selector popup on auth; set repo-local credential.helper to manager and use GIT_TERMINAL_PROMPT=0 for silent background pushes."
+      },
+      {
+        "action": "add",
+        "content": "Hermes secrets go to .env via `hermes config set NAME value`; config.yaml must carry ${VAR} references only, never plaintext keys — verify with a scan before any git commit."
+      }
+    ]
+  }
+}
