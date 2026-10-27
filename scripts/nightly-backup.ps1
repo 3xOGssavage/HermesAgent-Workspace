@@ -18,7 +18,7 @@ try {
   if ($LASTEXITCODE -eq 0) { 'BACKUP-SKIP: nothing changed' | Out-File $log; exit 0 }
   git -c user.name=Neohelper -c user.email=neohelper@local commit -qm 'auto: scheduled backup' 2>&1 | Out-File $log -Append
   $env:GIT_TERMINAL_PROMPT = '0'
-  git pull --rebase origin main 2>&1 | Out-Null
+  git pull --rebase --autostash origin main 2>&1 | Out-Null
   $attempt = 0; $pushed = $false
   while (-not $pushed -and $attempt -lt 3) {
     $attempt++
