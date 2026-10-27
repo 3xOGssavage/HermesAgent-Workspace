@@ -63,7 +63,57 @@
       "canonical_completions": [
         "24957fd3ab354dd9820cd95a4785ccf2"
       ]
+    },
+    {
+      "id": "f68afd442f8b",
+      "name": "nightly-github-backup",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "nightly-backup.cmd",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-10-28T03:21:24.799423+05:30",
+      "next_run_at": "2026-10-29T03:00:00+05:30",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "local",
+        "chat_id": "local-715c3e2530504f5b26d9825a3e31af6ac26e1dc0bea5ff394f646598e9937a49",
+        "chat_name": null,
+        "thread_id": null,
+        "user_id": "sid:S-1-5-21-3101644811-2335961832-2162672925-1001",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
     }
   ],
-  "updated_at": "2026-10-27T17:01:06.611669+05:30"
+  "updated_at": "2026-10-28T03:21:24.810896+05:30"
 }
