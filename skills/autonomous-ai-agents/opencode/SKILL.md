@@ -179,6 +179,8 @@ List past sessions:
 terminal(command="opencode session list")
 ```
 
+Sessions live in one global store (`~/.local/share/opencode/opencode.db`, tables `session`, `project`, `project_directory`) with `session.project_id` + `session.directory` columns — the TUI only shows the current project, so a missing session is usually filtered, not gone. Query the DB by title across all `project_id` values before concluding it is lost.
+
 Check token usage and costs:
 
 ```
@@ -186,9 +188,17 @@ terminal(command="opencode stats")
 terminal(command="opencode stats --days 7 --models anthropic/claude-sonnet-4")
 ```
 
+## Agent Modes (plan, build, subagents)
+
+Build is the default worker with full edit and shell access and implements changes. Plan is read-only exploration that proposes steps without edits. Tab switches between them in the TUI and --agent selects the mode for run commands. Subagents such as reviewer, tester, explorer, and fixer run with edit denied for one job each. Use plan for diagnosis and proposals and build for implementation. Explain modes in plain words with no code fences when the owner asks, because the owner reads in a plain terminal and is a partial coder.
+
 ## Sibling Handoffs (Neocoder runs this same opencode setup)
 
-When writing a task prompt for the sibling agent: state end-state plus required proof (exact diff, per-server test table, live listing), never step-by-step instructions — it plans its own house better than it follows yours. Name the stop conditions (needs a key, a login click, a restart) and where to halt instead of guessing. One verification round of its evidence closes the loop; a second opinion model adds nothing over live tests.
+Neocoder handles any coding project, not only its main portal project — never assume portal-only scope from its default workdir. When writing a task prompt for the sibling agent: state end-state plus required proof (exact diff, per-server test table, live listing), never step-by-step instructions — it plans its own house better than it follows yours. Name the stop conditions (needs a key, a login click, a restart) and where to halt instead of guessing. One verification round of its evidence closes the loop; a second opinion model adds nothing over live tests. When the user explicitly excludes Neocoder and says only Neohelper does the task, do the work directly and never delegate or offer handoff — an excluded sibling stays out to keep its workspace clean.
+
+## Motion Graphics Video (free code-to-video)
+
+Treat Claude-style motion graphics as code plus local render, not text-to-video models. Write Remotion for clean titles charts and captions, Manim for math and explainers, or p5.js single HTML for generative and audio-reactive loops, then render with ffmpeg to MP4. Always run a render, inspect frames, fix, re-render loop and start with a low-quality draft before final HD, because blind single-pass renders ship flat timing and broken layouts. This path needs only Node or Python plus ffmpeg and free models plus free TTS, so never require a paid API for it.
 
 ## Pitfalls
 

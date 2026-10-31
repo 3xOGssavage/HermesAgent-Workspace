@@ -226,6 +226,15 @@ and read the `info: stats:` line to see the counts before picking a number.
 - **Citing a search snippet as if you read the page.** A `web_search`
   description supports only what it literally says. Cite the extracted page
   when the claim needs the body — `web_extract` it first.
+- **Citing a repository you never opened.** Memory invents plausible
+  `owner/repo` paths. Fetch the repo page before citing stars, forks, or
+  license: a 404 means the path is wrong — search for the canonical repo and
+  record the correction; a redirect means the org was renamed — record the
+  new path and re-verify the counts on the landed page. A 200 alone is not
+  verification either — match identity signals (star count, description,
+  topics, README) against what you expect, because same-name imposter repos
+  exist; if the real source lives off GitHub, link that instead of the
+  imposter.
 - **Over-citing.** Three ids on a sentence is the ceiling; a citation on every
   clause makes text unreadable and hides which source carries the load.
 - **Citing the ledger in code/config artifacts.** Source comments belong in
@@ -243,6 +252,13 @@ and read the `info: stats:` line to see the counts before picking a number.
   retrieval, not more markers.
 - **Hand-editing the Sources block.** Use `render --replace-in <draft>`; slicing
   the file yourself risks a stale or duplicated block that `verify` then flags.
+
+## Verification Waves
+
+For multi-round research that files dozens of cited facts, run dedicated waves
+after synthesis — see `references/verification-waves.md` (owner-audit wave,
+correction protocol, number drift). Round output is a draft until a wave has
+re-checked it.
 
 ## Verification
 

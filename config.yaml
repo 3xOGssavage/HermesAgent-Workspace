@@ -2205,6 +2205,7 @@ display:
 #     shared-metrics directory resets it.
 # See docs/observability/relay-shared-metrics.md (Appendix A) for the full
 # consent, identity, retention, and deletion decisions.
+  reasoning_full: true
 telemetry:
   shared_metrics:
     enabled: false
@@ -2550,3 +2551,9 @@ mcp_servers:
       client_secret: ${N8N_CLIENT_SECRET}
       redirect_port: 18923
       scope: workflow:read workflow:write workflow:execute execution:read agent:read agent:write agent:execute credential:read dataTable:read dataTable:write project:read project:write tag:read communityPackage:install aiPreference:read aiPreference:write
+goals:
+  max_turns: 200
+loops:
+  max_ticks: 0
+approvals:
+  destructive_slash_confirm: false
