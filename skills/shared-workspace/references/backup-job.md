@@ -22,6 +22,10 @@ Companion to the shared-workspace nightly-backup step. Copy the pattern, adjust 
 - Failure route configured (alert channel), because every failure mode here is silent by default.
 - Encrypted offside copy of the secrets file exists and its recovery steps are recorded, since the backup itself excludes it.
 - Slow or flaky pipes push in the background with interactive prompts disabled, then verify with a remote-hash read; a killed foreground push looks finished while the remote never moved.
+## Native stderr trap (PowerShell scheduled jobs)
+
+Under `$ErrorActionPreference = 'Stop'`, a native command writing to stderr through a `2>&1` pipeline throws — so a harmless git warning (CRLF notices, progress lines) aborts the whole job and the catch logs the warning text as the failure. Scope `$ErrorActionPreference = 'Continue'` around every native git call, restore it immediately after, and check `$LASTEXITCODE` explicitly after each mutating call (add, commit, pull, push) with a throw carrying your own message. Never rely on the catch block to detect native failures, and never let the script exit silent on a nonzero exit code the preference shim swallowed.
+
 ## Failure alerts (Discord webhook)
 
 - Post alerts with `Invoke-RestMethod` carrying an explicit browser-style `-UserAgent`: Discord's edge returns 403 to bare-script requests (Python urllib default, PowerShell default), so a stored-good webhook tests fine from a browser and fails from the job — the fix is the header, not a new webhook. Always live-test the post once and read the channel before relying on it; regenerate the webhook only if the headered post still 403s.

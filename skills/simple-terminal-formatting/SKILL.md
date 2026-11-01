@@ -25,7 +25,8 @@ Every reply to Soham. Any summary, comparison, inventory, or status. Load before
 - Default to short structured sections with blank lines between parts, not one long wall of text.
 - Use tables ONLY when the data truly needs a table. Otherwise use short labeled sections.
 - When past format directives conflict, the newest explicit instruction wins until superseded — merge to one rule instead of stacking both.
-- When a table ships misaligned, rebuild it with script-checked widths and shorter cells, ideally split into small topic boxes — never resend a hand-aligned fix.
+- When a table ships misaligned, rebuild it with script-checked widths and shorter cells, ideally split into small topic boxes — never resend a hand-aligned fix. When the script builds border lines, derive the joint positions from the header row's pipe columns and re-stamp every border from those joints — a bar drawn at a fixed width drifts off the content columns.
+- Never retype a script-verified table into chat; paste the checked file content verbatim — retyping reintroduces the misalignment the script just removed.
 - For 100+ item listings (pending queues, full inventories), never dump every row: show a grouped count table plus conflicts, duplicates, stale items, and a suggested batch order; full rows only on request. See references/large-list-reviews.md.
 - When the owner explicitly says tabular format with serial numbers, build numbered ASCII tables with an Sl No column even if wide — split into 2-4 boxes by range, keep cells to short phrases. An explicit user directive overrides table minimalism.
 - When the owner says short and simple, compress to one takeaway plus labeled lines, no boxes unless asked.
@@ -44,7 +45,7 @@ Every reply to Soham. Any summary, comparison, inventory, or status. Load before
 3. Pad topic column to equal width, then pipes, then plus-dash borders with equals row under header.
 4. Verify widths by script before sending: assert every line of the box has identical length; a box that looks aligned in your head still ships broken when one cell overflows. Never hand-align and send.
 5. Add a one-line takeaway above or below: Verdict, Result, Next move.
-- When a decision is needed, ask it as an MCQ: each question with 2-4 labeled choices, recommended option first, never a bare open question. The owner decides fastest by picking, not by composing.
+- When a decision is needed, ask it as an MCQ: each question with 2-4 labeled choices, recommended option first, never a bare open question. The owner decides fastest by picking, not by composing. Tool constraint: clarify choices are plain strings, one per choice — structured choice objects are rejected, so keep labels short and put detail in the question text.
 
 ## Pitfalls
 
@@ -54,4 +55,4 @@ Every reply to Soham. Any summary, comparison, inventory, or status. Load before
 - Never rely on color alone; piped output loses it, so labels and ticks must carry meaning.
 - Never re-present a listing from chat memory or a screenshot-transcribed ID; re-run the live query first so IDs and state are current, because one misread char breaks resume/rename and stale copies miss new rows. This covers your own environment too: run pwd before claiming which directory you are in, because the session-start snapshot goes stale and asserting the wrong folder destroys trust.
 - When the owner says they did not understand, lead with the plain-words re-explanation first and ask second: never answer confusion with the same jargon restated as choices, because picking between unclear options is guessing, not deciding.
-- Cap total table width near 120 chars so rows never wrap on narrower windows; wrapping breaks pipes even when lengths match.
+- Default table width caps near 120 chars so rows never wrap on narrower windows; when the owner explicitly demands full width, generate at that width programmatically and verify every line identical — the owner's wide screen is the target, not the cap.

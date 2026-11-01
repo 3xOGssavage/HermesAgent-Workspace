@@ -11,6 +11,10 @@ Dumping every row floods the chat and gets ignored. Group first, then report.
 5. Flag big patch/remove ops by id for careful review before approval — rewrites and removals are the only items that can destroy saved state.
 6. Recommend batches: safe merges first (identity, schedule, proven fixes), tool-specific second, business lines third, big rewrites last.
 
+## When the owner demands the full listing anyway
+
+An explicit full-listing request overrides the grouped-count default. Split by decision, not by topic: act-now tables first (approve, reject-now, reject-after, never-touch), then the rest grouped by fate. Machine-generate every table and assert identical line widths before sending — never hand-align a 100-row listing. Reconcile at the end: files on disk must equal IDs listed, zero missing, zero phantom; disclose and fix any typo'd ID in the same message.
+
 ## Pitfalls
 
 - Approving a 100+ queue one by one wastes the session; always propose merged batches instead.

@@ -55,6 +55,7 @@ Scope: no installs, no paid services, no uploads without asking. Research verifi
 - Kimo: CI-only Windows, deletes-only transcript, 1 undo step, no autosave — deferred.
 - OpenEdit: transcribe first; `transcript.json` is the seam; EDL apply + retime.
 - NLLB-600M-int8 is CC-BY-NC research-only; Google 500K free wins fluency.
+- hermes-video-editor plugin: 45 local FFmpeg tools + visual editor, but PolyForm Noncommercial — monetized output needs a paid Lokyy.de licence, so skip it for revenue work; clip.py already covers Shorts captioning/batching.
 - Never commit renders to git; checkpoints every 25 min; external copy of project file + selects + final.
 
 ## Verification

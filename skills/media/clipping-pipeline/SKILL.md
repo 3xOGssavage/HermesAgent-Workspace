@@ -14,8 +14,22 @@ metadata:
 # Clipping Pipeline
 
 # I operate the live clipping folder at `F:/CD/Projects/Clipping`.
-I never edit its code without being asked. I run its commands, read its
-outputs, and report back in simple words.
+- I now own this pipeline's code too (Neocoder is out of video work).
+  I may edit clip.py and render_template.py, but only with a backup
+  first, one change at a time, and a render plus qc test after each.
+  - If a test fails, revert and report. Never rewrite whole files.
+  - Hard lessons from the Nov 2026 audio upgrade: new filter text must
+    land inside f-strings or ffmpeg sees literal {dur}; sidechain ducking
+    can shorten audio, so always lock mix length with apad plus atrim;
+    final mux uses -shortest, so a short mix silently cuts video; when a
+    duration changes, bisect against the .bak before theorizing.
+- clips.js merge lesson: committed dashboard file was a JS literal
+  (unquoted keys), but the reader only parsed strict JSON — every
+  render silently wiped other slugs. Fixed with tolerant prefix match
+  plus one-time normalize to strict JSON, verified 18 entries survive.
+- Scene cuts are wired into moments: every run probes cuts and snaps
+  edges within 2s (window guard keeps bad snaps out). Static footage
+  correctly returns unchanged moments — verified identical re-run.
 
 ## When to Use
 
@@ -23,7 +37,7 @@ outputs, and report back in simple words.
 - New campaign work: moments, styles, ready_to_post review.
 - Daily ops: cleanup old campaigns, learn top performers.
 
-Don't use for: code changes to clip.py. Language: English-first for now.
+Scope note: clip.py and render_template.py edits are in scope (owned); everything else in that folder is run-only. Language: English-first for now.
 Hindi and other languages are deferred, not removed.
 
 ## Prerequisites
@@ -32,6 +46,7 @@ Hindi and other languages are deferred, not removed.
 - Its own venv: `F:/CD/Projects/Clipping/.venv/Scripts/python.exe`
   (Python 3.12.6). Never my Python. Never the system Python.
 - Its own tools: `bin/ffmpeg.exe`, `bin/ffprobe.exe`, `bin/yt-dlp.exe`.
+  ffmpeg is the 7.1.1 full build: verified filters include select, silenceremove, sidechaincompress, afftdn, loudnorm, afade — scene-detect, ducking, denoise, fades, lip-sync shift need clip.py code only, no new tools or licences.
 - Node v22 for HyperFrames renders. All free, all local.
 
 ## How to Run
@@ -42,7 +57,8 @@ All commands run with cwd set to the live folder, using its venv python:
 cd F:/CD/Projects/Clipping
 ./.venv/Scripts/python.exe clip.py new <youtube_url> <slug>
 ./.venv/Scripts/python.exe clip.py moments <slug> --no-docker
-./.venv/Scripts/python.exe clip.py render <slug> --style hormozi-clean
+./.venv/Scripts/python.exe clip.py scenes <slug> [--threshold 0.3]
+./.venv/Scripts/python.exe clip.py render <slug> --style hormozi-clean [--shift 0.15] [--only m2]
 ./.venv/Scripts/python.exe clip.py qc <slug>
 ./.venv/Scripts/python.exe clip.py track <slug> tiktok <views> <earnings>
 ./.venv/Scripts/python.exe clip.py learn
@@ -73,9 +89,12 @@ Review in `dashboard/index.html` opened in a browser.
 
 ## Pitfalls
 
-- Two near-identical project folders can exist (live vs copy). Never trust
-  the path alone — run `diff -q` on the entry script across both folders
-  before assuming which one is live. Silent diff output means mirror.
+- Old twin copy is gone (deleted Nov 2026 after verifying identical;
+  husk removed). Live folder is the only copy. This pitfall is retired.
+- `cache/scratch/` is pruned after roughly 24h idle — whole research
+  folders can vanish overnight. Promote durable findings into this skill
+  or a references/ note before closing the session; never treat scratch
+  as an archive.
 - `openai-whisper` is in requirements but NOT installed. Use
   faster-whisper (already in venv). Never pip-install blindly; ask first.
 - `ledger.csv` is header-only and `learn.json` is a stub. Real tracking
@@ -85,12 +104,20 @@ Review in `dashboard/index.html` opened in a browser.
 - openshorts/ is dead weight. Ignore it unless asked to remove it.
 - TikTok and Instagram posting is manual from the phone. No API is wired.
   Never claim a video is posted until Soham confirms.
+- Future-tense talk is not an order — "I will say remove X" announces
+  intent, it does not authorize deletion. Hold every removal until the
+  exact list is confirmed with an explicit yes, then verify counts
+  before and after.
 
 ## Verification
 
 - Each command exits 0 and names its output files.
 - Rendered MP4s exist under `ready_to_post/` for all three platforms.
+- Rendered durations match the pre-render durations (ffprobe before and
+  after); a changed duration means the mix chain shortened audio —
+  bisect against the backup, do not ship.
 - `qc` says pass before anything is called done.
+- When a render reports "done 0 clips", the bug is upstream of the mux: check moments.json is non-empty first, then read the FULL log file (never diagnosis from tail output — tail hides both the real exit code and the failing lines). Pipe to a file and grep it.
 - Dashboard shows the clip cards with pass or fail marks.
 
 ## Standing Rules (Soham's standing orders)
@@ -102,6 +129,7 @@ Review in `dashboard/index.html` opened in a browser.
   folders, accounts, channels. Clipping output never goes on own channels.
 - Music: ALWAYS stop and ask Soham before any music goes on any clip.
   No exceptions, even if a brief says approved.
+- Rejected tool: hermes-video-editor plugin evaluated Oct 2026 and refused — PolyForm Noncommercial licence bans monetized YouTube, 3-week-old beta with 1 star, clip.py already covers all Shorts needs. Revisit only for Track 2 long-form with a commercial licence.
 - Fresh-start rule: old campaign files stay until the fresh setup proves
   itself. Soham creates campaign subfolders himself per video job.
 - Precedence over research: if the research folder and this skill ever

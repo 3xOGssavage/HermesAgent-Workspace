@@ -33,7 +33,8 @@ Setting up or changing a shared project folder for two agents, defining who may 
 
 - Explain in simple words — the owner is not a coder; no jargon without a one-line gloss.
 - Ask decisions in MCQ form (options as choices, recommended first); never bury a decision in prose.
-- Match reply length to the ask: one-line question, short answer; finished work gets what changed, what is verified, what is left — never a replay of the process.
+- Match reply length to the ask: one-line question, short answer; finished work gets what changed, what is verified, and what is left — never a replay of the process.
+- Relay text crossing houses must carry literal identifiers (exact file paths, pending IDs, dates) every time, never deictic pointers like 'the path above' — the other side cannot verify what it cannot see, and one missing path stalls the whole relay.
 
 ## Locked owner decisions (2026-10-28, do not re-ask)
 - Shared home holds ten project folders (early twelve was an unverified guess; corrected 2026-10-28).
@@ -102,6 +103,7 @@ Setting up or changing a shared project folder for two agents, defining who may 
 - Never layer a collective backup repo over per-project remotes that already cover recovery: re-pushing tens of gigabytes duplicates history for no gain, so verify what the existing remotes already protect first and let the shared home be folders plus the memory file with the file snapshotted in an existing backup.
 - Never move a dirty or feature-branch checkout as the canonical state: move the stable line and leave WIP plus dirty files in the old location as fallback, because the pilot must test the move, not uncommitted work.
 - Never dispute the other agent's quote before searching your own house: grep your skills, memories, and scratch scripts for the figure first, because the other side may be quoting your own run back at you and the retraction costs more than the check.
+- Never forward a name, ID, or number in relay text without checking it against your own record first: an invented or mistyped proper noun becomes a trust incident on the other side, and the other agent is right to quarantine it. When flagged, admit it plainly in the same turn, correct the record, and file what the name should have been — defending a typo costs more than ten admitted errors.
 - Never grep Windows paths in one slash form only: plan docs write forward slashes while tools write backslashes, so run both forms (and a bare-keyword pass) before declaring zero refs — a single-form grep reports false clean and hides live stale addresses.
 - Never treat one failed listing as proof of absence: confirm a missing repo, file, or dir with a direct second check (rev-parse, explicit path test), because a bad grep or truncated listing manufactures a scare out of intact state.
 - Never compare hashes across agents without naming the algorithm: SHA-1 and SHA-256 of identical files print completely different strings, so every hash claim states the algorithm — an algorithm mismatch looks exactly like file corruption and triggers a false incident.

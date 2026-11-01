@@ -49,6 +49,7 @@ metadata:
 
 - Tavily rotator (shared launcher file) has 5 tools only: search, extract, crawl, map, usage. No research tool exists in it.
 - Tavily chunks_per_source caps at 3 (API-side); asking 5 silently becomes 3.
+- Tavily fixed defaults for every call (owner-locked Oct 2026): search depth advanced, max_results 20, raw content true; extract depth advanced, markdown, query-filtered; crawl max_depth 5, max_breadth 80, limit 100; map max_depth 5, max_breadth 80, limit 100. Raise limits only when the task needs it.
 - Rotator default depth is basic unless TAVILY_DEFAULT_DEPTH=advanced is set in server env.
 - Rotator state file is shared with Neocoder; both agents rotate from it.
 - Portal connector entries (_mcp names) cannot be deleted locally; Off with no account is fully removed for daily use.
