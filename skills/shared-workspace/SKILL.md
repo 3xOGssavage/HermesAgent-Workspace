@@ -78,10 +78,17 @@ Setting up or changing a shared project folder for two agents, defining who may 
 - Federation ADOPTED: Sunday 5-min contract-vs-record drift check; overlaps quote-by-reference-with-date.
 7. Back up on the owner's schedule to the owner's remote (locked: Sundays 5 PM IST) plus one cold copy before adding the second project. Alert on failure in the owner's chosen channel. The job must pull-rebase before pushing, retry the push, log every stage to a file, and stay silent only when nothing changed. See references/backup-job.md for the recipe.
 
+## Locked labor-vs-home matrix (final, Nov 2026 — cite, don't re-derive)
+- Seed chapters: Neohelper drafts (sources in Hermes cache); Neocoder verify-then-files to vault/seed/. Mirror: Neohelper builds; Neocoder verify-then-files. Heir package: Neohelper assembles; Neocoder verifies manifest + owner cold-opens yearly. v2 spec: Neocoder authors labeled v2 in build mode; Neohelper verifies section-by-section + schema. June run + report: Neocoder runs (only vault writer); Neohelper verifies after; owner Go before, second Go for wider months.
+- Queue/boxes/triage/keeper rounds + gateway/alerts/hookup/Discord + Sunday hookup test: Neohelper owns; Neocoder clash-check vetoes; owner picks/breaks ties.
+- Vault commits, 4pm jobs, LSTM backup, S1 probes: Neocoder owns; trees must match both sides.
+- Drift checks alternate weeks (joint 5-line summary); exams alternate authorship (other verifies); source deletion ~Nov 12-13: Neohelper cron executes only on owner explicit word + Neocoder parity gates; everything else recurring: clocks, owner reads 5 lines.
+- Physics: Hermes bridge read-only by enforcement; Neocoder commits under vault identity; cross-house content moves as proposals; single-writer-per-file-per-day.
+
 ## Pitfalls
 
 - Never assert an unfamiliar external fact from memory: search the web (or the authoritative docs/repo) first, then state it with the source beside it — because a confident wrong technical claim (encryption strength, session-storage internals) costs more trust than the 60-second check ever costs.
-- Never let a map outlive its code: whoever changes code rebuilds that project's index the same sitting, because a stale map plus fresh code produces confident wrong answers. whoever changes code rebuilds that project's index the same sitting, because a stale map plus fresh code produces confident wrong answers.
+- Never let a map outlive its code: whoever changes code rebuilds that project's index the same sitting, because a stale map plus fresh code produces confident wrong answers.
 - Never run two writers on one file the same day without an owner assignment; last-writer-wins is silent data loss, not collaboration.
 - Never let approval queues pile up: safe small items auto-approve after 12 hours unless vetoed (owner-locked), big or destructive items always wait, otherwise the owner becomes the bottleneck and learning halts.
 - Never build ceremony for a two-agent team that only pays off at twenty: one repo, one memory file, delete-on-touch beats tiers, boards, and quarterly reviews that die in three weeks.
@@ -110,3 +117,4 @@ Setting up or changing a shared project folder for two agents, defining who may 
 - Never hand a zero-context fresh session a resume note that asks it to trust prior verification: the handoff carries identity, record paths, current state, and exact ordered steps, and instructs re-verify-everything-first, because a recovered session that assumes is a session that ships the glitch forward.
 - Never keep writing when your own tool calls misfire: two malformed or empty calls in a row means stop all mutation, switch to read-only, and report — a corrupted-but-valid call that slips through costs more than the whole night's progress.
 - Never assume chat sessions follow a moved opencode project: the new path registers empty while history sits orphaned under the old path — see references/opencode-session-carryover.md for the pin-file method (write old project id into new clone's `.git/opencode` before first open) and the live-DB proof queries. Verify with the database, not theory, and confirm the old sessions list in the new home before the owner nod.
+- Never assume the new home is ahead during the two-copy clock: compare HEAD and status on BOTH paths before trusting either, because the old copy keeps receiving commits after the move and the new copy goes stale silently.

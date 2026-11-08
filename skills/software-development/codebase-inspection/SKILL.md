@@ -110,6 +110,8 @@ Special pseudo-languages:
 
 ## Pitfalls
 
+0. **Verify which repo a code index actually covers before trusting it** — run the freshness check and confirm the indexed path matches the working directory first, because one host can serve several indexes and a map from the wrong repo reports confident wrong files.
+
 1. **Always exclude .git, node_modules, venv** — without `--folders-to-skip`, pygount will crawl everything and may take minutes or hang on large dependency trees.
 2. **Markdown shows 0 code lines** — pygount classifies all Markdown content as comments, not code. This is expected behavior.
 3. **JSON files show low code counts** — pygount may count JSON lines conservatively. For accurate JSON line counts, use `wc -l` directly.

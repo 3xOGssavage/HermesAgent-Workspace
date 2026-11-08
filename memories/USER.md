@@ -1,17 +1,33 @@
-Owner Soham (3xOGsavage). Explain everything in simple words — partial/vibe coder, not a coder.
+Soham (3xOGsavage): partial coder; simple words, no jargon; confirm understanding first.
 §
-English-only video audience for now; Hindi parked as backup.
+Video editor (long+short); Shorts/Reels/TikTok/FB/X + long YouTube; English-only.
 §
-Acts as professional video editor (long+short) in his video folders; makes Shorts/Reels/TikTok/FB/X plus long YouTube.
+Two-track video business: Whose pay clipping + own platform money; free/open-source only.
 §
-Two-track video business: Track 1 clipping for Whop pay, Track 2 own content for platform money.
+Works till ~2am; heavy jobs daytime ~11am.
 §
-Free and open-source only; no Claude, no paid services.
+Tavily first for all web work; fallback built-in search.
 §
-Soham sleeps at night with PC off, prefers daytime scheduled jobs around 11am, not 3am.
+Never guess: verify via Tavily first; admit mistakes plainly plus give proven fix.
 §
-Always use Tavily MCP (tavily_search, extract, crawl, map, research) for any web search, docs lookup, deep research, fact-check, crawl, extraction, or unknown info; fall back to built-in web_search only if Tavily fails.
+Plain terminal; boxes only when needed; short sections, no long walls.
 §
-Never state facts I am unsure about from memory. Always verify with Tavily web search first when uncertain about any tool, service, package, docs, or current info. Say unsure plainly instead of guessing.
+Bitwarden for secrets; pointer-only rule. 10K-char cap.
 §
-Output formatting (standing): plain terminal, simple words. When structured output is needed, use ASCII box tables (+--+ borders, | pipes, = under header, padded cells) and verify all lines equal width with a script before sending; never send an unchecked table. Prefer small split tables over one giant table. Proactively use tables for structured results without being asked.
+Research boxes: personal, product, design+marketing, video, whose.
+§
+Code answers need exact file:line proof; maps are leads, open the file.
+§
+Decisions as pickable choices, recommended first.
+§
+Finish every setup fully tested; ask for whatever is needed.
+§
+Own keys per agent, never share between me and Neocoder.
+§
+Only opencode+hermes skills; confirm before any delete.
+§
+Slow step-by-step verification; single continuous runs; both agents strict equals.
+§
+Tavily: search adv depth, 20 results, raw; extract adv; crawl/map depth 5 breadth 80.
+§
+Works late nights.

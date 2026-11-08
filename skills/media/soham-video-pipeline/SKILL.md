@@ -37,7 +37,7 @@ Scope: no installs, no paid services, no uploads without asking. Research verifi
    - Skip: ElevenLabs free (10K credits NON-COMMERCIAL + attribution), Piper (GPL + per-voice caution), Chatterbox watermark (PerTh embedded, try HF Space first).
 5. Captions — VEED hosted first, WhisperX local fallback (15m). Done when: `transcript.json` with word timings exists.
    - VEED: 10-min free, best Hindi quality. Fallback: WhisperX local offline (word-times + hi aligner, needs HF token; medium model = sweet spot, small collapses 42% WER, large-v3 best 15.7%).
-   - Render: ffmpeg libass burn-in (watch Windows colon escaping); karaoke ASS = small custom script grouping 4-7 words. faster-whisper has NO upstream CLI; stable-ts is archived — don't build on them.
+   - Render: ffmpeg libass burn-in (watch Windows colon escaping); karaoke ASS = small custom script grouping 4-7 words. faster-whisper ships NO CLI — call it from Python (transcribe with word_timestamps=True, proven in the live clipping pipeline); stable-ts is archived — don't build on it.
    - Whisper tuning: `vad_filter` + `condition_on_previous_text False` kills ghosts; never force `en` on Hinglish; prompt script controls output script.
 6. Stock+Music+SFX (10m). Done when: one clip + one bed downloaded with license logged per asset.
    - Stock: Pixabay API key (instant, 100/min, cache 24h, no hotlink; music = Content-ID trap). Pexels new keys PAUSED; Coverr demo 50/hr + attribution.

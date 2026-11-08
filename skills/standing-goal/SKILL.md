@@ -34,6 +34,7 @@ Any persistent goal with a verification contract, time gates, and a stop-when cl
 - Skipping a missed gate silently — log missed gates as missed with the reason, then continue; a gap in the log with no note reads as fabrication.
 - Rewriting history after the fact — the log is append-only: user-ordered rounds after completion get dated EXTRA entries marked as outside the original box, never folded into it; user-caught factual corrections get a dated CORRECTION entry plus the patched line, never a silent edit.
 - Repeating the plan instead of acting — a response that only describes next steps with no tool calls is a wasted turn.
+- Keep dossier work inside its own folder: redirect any stray probe or scratch dir a subagent creates into it at once; a stray dir outside breaks the file contract. Verify with a listing before close.
 - Trusting remembered file contents for patches — re-read the file fresh when a patch fails to match; stale memory of the text causes repeated failures.
 - Overwriting a synthesis file a child already wrote — a write refusal means the child filed it first, so read it fresh and patch a header or extend it; never clobber a child's verified content with your own draft.
 - Filing a name, repo path, or count you only saw mentioned inside another source — verify every identifier against its own live page before it enters the deliverable; a transitive mention is not a verification.

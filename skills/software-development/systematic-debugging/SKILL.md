@@ -73,6 +73,7 @@ You MUST complete each phase before proceeding to the next.
 - They often contain the exact solution
 - Read stack traces completely
 - Note line numbers, file paths, error codes
+- When the traceback ends in KeyboardInterrupt, treat the top frame as the interrupt site, not the defect — the root is whatever was slow or blocked before the interrupt, so time that phase and read the wait or loop above it.
 
 **Action:** Use `read_file` on the relevant source files. Use `search_files` to find the error string in the codebase.
 
@@ -291,6 +292,13 @@ pytest tests/test_module.py::test_regression -v
 # Run full suite — no regressions
 pytest tests/ -q
 ```
+
+Verify against the OLD behavior, not just the test suite: run the
+same symptom check on pre-fix and post-fix output (the differential
+loop). If the fix regresses the exact symptom it was meant to cure,
+revert to last-green immediately and pin that verdict as a regression
+test — stacking a compensating fix on top of a regressing change
+compounds the damage instead of removing it.
 
 ### 4. If Fix Doesn't Work — The Rule of Three
 
