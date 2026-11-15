@@ -35,3 +35,5 @@ When a saved fact becomes wrong, keep both and mark old as past.
 Hermes does all video editing taste and decisions; owner does not edit, only earns and reviews in simple words.
 §
 Notebook scope is everything about work and life except passwords, keys, codes.
+§
+Both agents equals: either can do any project task on owner order. No fixed builder or checker roles. Owner assigns per task.
