@@ -499,6 +499,8 @@ vault in Obsidian on your laptop/phone — changes appear within seconds.
 
 ## Related Tools
 
+- Graphify structure trial (copy-first, audited): see `references/graphify-trial.md` — step-0 package/command/license/backend checks, OpenAI-compatible wiring (incl. OpenCode Go/Console doors), Q61/Q67 verdict rules, vault-untouched law.
+
 [llm-wiki-compiler](https://github.com/atomicmemory/llm-wiki-compiler) is a Node.js CLI that
 compiles sources into a concept wiki with the same Karpathy inspiration. It's Obsidian-compatible,
 so users who want a scheduled/CLI-driven compile pipeline can point it at the same vault this

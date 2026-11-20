@@ -21,7 +21,7 @@ Every turn where the owner forwards another agent's output and expects verificat
 
 ## Procedure
 
-1. Vision-check every attached image first — screenshots are provenance, and the text is usually complete without them; if an image fails to load, say so and rule from the text alone.
+1. Vision-check every attached image first — screenshots are provenance, and the text is usually complete without them; if an image fails to load, say so and rule from the text alone. When an image holds a paste-as-is relay block, ask for its verbatim transcription (not a summary) and state match or mismatch on that text explicitly — because a summarized relay hides a reworded trigger word that stalls the other house.
 2. Verify each checkable claim on your own disk (file presence, sizes, box math, log lines) before accepting it — quote the disk result, not the text.
 3. Track sequence explicitly: the latest owner word always supersedes earlier relays, and a reply aimed at an old relay is stale, not wrong — say which text it answered and re-relay the newer word.
 4. Relay back as a verbatim paste-ready block the owner can forward untouched — no placeholders, no missing IDs.
@@ -50,3 +50,8 @@ Every turn where the owner forwards another agent's output and expects verificat
 - When month-slicing SQLite histories for review, check timestamp units per table (milliseconds vs seconds) before grouping — because one house can store ms and the other sec, and grouping raw values buckets a whole house into 1970-01 while looking like a clean count.
 - Verify a migrated copy with content proof plus health, not screenshots alone: hash-compare key files, re-run text diffs CR-stripped (line-endings-only deltas are functionally zero), and quote lint errors plus typecheck exit — because a screenshot shows the claim while hashes and exits show the result.
 - When a trigger word fires a gated run, name the exact chat to say it in (here vs there) in the same message — because 'say file it' without a place stalls the owner between two chats while one named place moves.
+- Verify tools/mirror kickoff DRAFTs against frozen input before relaying any go: confirm frozen commit counts, no-vault-writes-anywhere with hash-verify, checkable acceptance bars per track, and lane-correct filing (scratch vs vault, who files) — because a tools plan that opens the live vault or skips acceptance silently breaks the single-writer lock the moment it runs.
+- Say every trigger word in exactly one chat — the addressed house builds, the other audits; never fire the same word in both houses — because duplicate builds diverge under the single-writer lock and waste the run both houses already verified.
+- When the image loader reports media-not-found, list the parent cache directory to resolve the exact `upload_*.png` filename and retry once with the full forward-slash file path — because the failure means the path named a folder or a moved file, not a transient error, and retrying the same path unchanged loops.
+- A screenshot whose proof sits collapsed behind 'Click to expand' proves nothing by itself — reproduce the hash, stat, and status on your own disk before confirming, because the visible claim text is the agent's summary, not the command output.
+- An older board snapshot is time-progression, not a dispute: compare its timestamp against known history first, and when its HEAD counts match a prior verified state, say so and move on — because crying mismatch on a stale-but-consistent board manufactures conflict from clock skew.
