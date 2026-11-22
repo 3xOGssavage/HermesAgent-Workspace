@@ -30,6 +30,10 @@ Any persistent goal with a verification contract, time gates, and a stop-when cl
 
 8. After any pause, interruption, or session break, re-verify live state before touching anything — fetch plus HEAD-vs-origin, working-tree status, and the exact resume point from the log or deliverable; never resume from memory of where things stood.
 
+9. One batch at a time for multi-batch sweeps: never open the next stealbatch until the current one is fully done and every site in it verified (captures + handpass + funnel + writeups + committed + pushed). Leftover sites from paused batches are finished before new batches start.
+
+10. When asked whether a sweep is truly gap-free, prove it with a read-only audit before answering: fan out one auditor per batch range, each checking roster count vs artifact count (e.g. per-site writeups present) vs log rows marked done/queued/skipped. A CLOSE marker in a file is a claim, not evidence — re-derive the counts yourself, since stale ledger rows and superseded draft artifacts both mislead.
+
 ## Pitfalls
 
 - Claiming done before the stop condition is fully met — the log must show the full span and the deliverable must exist and verify.
